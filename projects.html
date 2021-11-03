@@ -42,48 +42,69 @@
 								<h1>Projects</h1>
 						</header>
 
-						<p>Among many projects done at the university, at work or in my free time few deserve a detailed explanation as they showcase my interests and skills.</p>
+						<p>Among many projects done at the university, at work or in my free time, few deserve a detailed explanation as they showcase my interests and skills.</p>
 
 
 
 						<!-- Post -->
 
 							<section class="post">
-								<h2>Debatable hate speech detection</h2>
+								<h2>Debatable hate speech detection - Master's Thesis</h2>
 
 								<p>
-								<br>
-									Motivations
+									Having learned a lot about technicalities of machine learning, I decided to take
+									even one more step forward in my MSc project and try to answer entirely different
+									questions. The European Union together with the big tech companies developed a Code
+									of Conduct on Countering Hate Speech Online that companies voluntarily obey. The
+
+									<a href="https://ec.europa.eu/info/sites/default/files/codeofconduct_2020_factsheet_12.pdf">
+									5th Evaluation of the Code of Conduct</a> highlights that although percentage
+									notifications assesed within 24 hours is steadily rising, most users do not
+									receive any feedback or justification as to what decision was taken and why.
+									The goal of the project was to create a language classification model that would be
+									able to, at least partially, justify decisions to the user.
                                 </p>
 
 								<p>
-								<br>
-									Technicalities
+									Using a dataset of sythetically generated tweets two NLP neural networks were built.
+									Various preprocessing and encoding methods were tested and, for comparison purposes,
+									a long short-term memory and bidirectional neural networks were used. Once sentences
+									were classified, the two networks engaged in a debate to determine the outcome.
+									The debate was rendered to the screen using natural language so the user can see
+									what decisions led to classification.
+
                                 </p>
+
+								<p>
+									The framework provided both models with few arguments of statistical nature, for
+									example, comparing similarity of a given sentence to training sentences. This can be
+									used as	a measure of trustworthiness of a model. The framework, inspired by Kok et
+									al. 2011, can be extended in the future
+								</p>
+
 
 							</section>
 
 
 							<section class="post">
-								<h2>Kafkacow</h2>
+								<h2><a href="https://github.com/mchorazak/kafkacow" >Kafkacow</a></h2>
 								<p>
-									<br>
-									about kafkacow.
+									Kafkacow is a tool I designed, built and tested. It is a good showcase of my code as I
+									was the primary developer. Contrary to other projects, this one incorporates many different technologies.
+									It is a C++ application that uses Jenkins for CI, Doxygen for documentation.
+									It is a tool for reading and pushing messages into a Apache Kafka cluster.
+									Contrary to similar existing programs, it supports Flatbuffers serialization.
                                 </p>
 
 
 							</section>
 
-							<section class="post">
-								<h2>Venus</h2>
-								<p>
-								<br>
-
-                                </p>
-
-
-
-							</section>
+<!--							<section class="post">-->
+<!--								<h2>Venus</h2>-->
+<!--								<p>-->
+<!--								-->
+<!--                                </p>-->
+<!--							</section>-->
 
 			        </div>
 				<!-- Footer -->
