@@ -96,12 +96,14 @@
 									Kafkacow is a tool I designed, built and tested. It is a good showcase of my code as I
 									was the primary developer, but not the only user.
 									Kafkacow is a tool for reading and pushing messages into a Apache Kafka cluster.
+									The main difference between it and other existing Kafka consumer/producer programs is that
+									it supports Google Flatbuffers serialisation. The data was serialized and deserialised
+									on the fly.
 								</p>
 								<p>
-									Contrary to some other projects,
+									Contrary to many projects that can be done, for example, at the university,
 									this one incorporates many different technologies.
-									It is a C++ application that uses Jenkins for CI, Doxygen for documentation.
-									Contrary to similar existing programs, it supports Flatbuffers serialization.
+									It is a C++ application using CMake, Jenkins for CI, Doxygen for documentation.
                                 </p>
 
 
@@ -111,9 +113,14 @@
 								<h2><a href="https://github.com/mchorazak/venus_volcanoes" >Volcanoes on Venus</a></h2>
 								<p>
 									This program analyses performance of different machine learning techniques on a
-									NASA Magellan dataset. Using scikit-learn and Tensorflow, program trains a decision
+									NASA Magellan dataset. The dataset contains small images of surface of Venus, and
+									labels indicating the geological formations in the picture.
+								</p>
+								<p>
+									Using scikit-learn and Tensorflow, program trains a decision
 									tree, random forest, logistic regression and three different convolutional neural
-									networks. Additionally, it builds ensemble of all CNNs.
+									networks. Additionally, it builds ensemble of all CNNs. The program then compares
+									different approaches to the problem in forms of graphs.
                                 </p>
 
 							</section>
